@@ -769,7 +769,7 @@ main{
     }
     
 }
-@media screen and (max-width:400px) {
+@media screen and (max-width:500px) {
     main{
         padding-left: 20px;
         padding-right: 5%;
