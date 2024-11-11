@@ -1,0 +1,820 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Lato,sans-serif;
+}
+:root{
+    --clr:#2bc5b4 ;
+}
+img{
+    width: 100%;
+}
+body{
+    background-color: #f6f6f6;
+}
+/*header part*/
+
+/*left-part*/
+header{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    position: fixed;
+    background-color: #f6f6f6 ;
+    z-index: 12;
+    box-shadow: 1px 1px 1px grey;
+}
+.hh1{
+    width: 50%;
+    height: 50%;
+    display: flex;
+    gap: 20px;
+    justify-content:left;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-right: 10px;
+
+}
+.hh1>h2{
+    font-size: 15px;
+}
+.hh1 a{
+    font-size: 15px;
+    text-decoration: none;
+    color: black;
+    height: 50%;
+    
+}
+/* left music part*/
+.music{
+    position: absolute;
+    left: 4.5rem;
+    top: 3rem;
+    width: 50%;
+    height: 400px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    gap: 10px;
+    border: 1px;
+    box-shadow: 1px 1px 5px grey;
+    background-color: white;
+    border-radius: 6px;
+    z-index: 12;
+}
+.mcont{
+    width: 100%;
+    height: 100%;
+    border: 2px ;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    grid-template-rows: repeat(1,1fr);
+
+    gap: 10px;
+
+}
+/*music part anchor tags*/
+.in-music1>a{
+    padding: 2px;
+}
+.in-music1,.in-music2,.in-music3{
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    gap: 10px;
+}
+.music>h2{      /*What's Hot on PRIME-O*/
+    font-size: 1.6rem;
+}
+.mh4{           /*NEW RELEASES,TOP PLAYLISTS,TOPARTISTS*/
+    font-size: 0.733rem;
+    color: rgba(0, 0, 0, 0.605);
+}
+.music-cont{
+    width: 70%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+/*HOVER PORTION*/
+.music{
+    display: none;
+}
+.music:hover,.ah1:hover+.music{
+    display: grid;
+
+}
+/*-------------------------------------------------------*/
+
+/*right part*/
+.hh2{
+    width: 55%;
+    display: flex;
+    height: 35px;
+    justify-content: end;   
+
+}
+
+/*icon part*/
+/*  */
+.hh2>i{
+    padding-top: 5px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    /* border: 2px solid; */
+   
+
+}
+.i-hh2{
+    width: 45%;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    /* border: 2px solid; */
+    /* position: relative;
+    right: -25%;  */
+}
+.i-hh2>h2{
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+.i-hh2 p{
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.615);
+}
+/*>>>>>>>>>>>>right img------*/
+.last-img{
+    width: 5%;
+    height: 50px;
+    display: flex;
+    gap: 5px;
+    margin-right: 30px;
+}
+.last-img>img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    /* margin-right: 2%; */
+}
+.last-img>i{
+    padding-top: 5px;
+    font-size: 0.7rem;
+    font-weight: 600;
+
+
+}
+
+/*search engine part*/
+.src-label{
+    width: 70%;
+    height: 40px;
+    text-align: center;
+}
+.src-input{
+    width: 80%;
+    height: 40px;
+    text-align: center;
+    border: 2px ;
+    position: relative;
+    left: 5%;
+    outline: none;
+    border-radius: 24px;
+   
+    transition: all 0.6s;
+    
+    
+}
+.icn-1{
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 36%;
+    top: 35%;
+    z-index: 12;
+}
+/*>>>>>>>>>>>>>>>>>>check--------*/
+#check{
+    position: absolute;
+    left: 50%;
+    top: 3%;
+        display: none;
+}
+/*src div container*/
+.src-div{
+    position: absolute;
+    width: 70%;
+    height: 250px;
+    left: 14%;
+    top: 45%;
+    border: 1px ;
+    background-color: white;
+    border-radius: 10PX;
+    box-shadow: 1px 1px 5px grey;
+    display: none;
+    z-index: 20;
+   
+}
+.srcinter{
+    /* position: absolute; */
+    margin-top: 5%;
+    margin-left: 2%;
+    width: 60%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: end;
+    left: 20%;
+    top: 5%;
+    border: 2px solid white;
+    
+}
+.input-src{
+    width: 90%;
+    height: 40px;
+    border: none;
+    outline: none;
+    position: relative;
+    left: 5%;
+}
+.icn1{
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 2%;
+    top: 2%;
+
+}
+#check+span{
+    position: absolute;
+    right: 2%;
+    top: 2%;
+}
+.checkbox{
+    position: absolute;
+    right: 2.2% ;
+    top: 2.2%;
+}
+.icn2{
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    position: absolute;
+    right: 2%;
+    top: 1.2%;
+}
+.srcin{
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr 3fr;
+    height: 50px;
+}
+/*src text*/
+.srcin>div>h4{
+    font-size: 0.88rem;
+    font-weight: 400;
+}
+.srcin>div>span{
+    font-size: 0.88rem;
+    font-weight: 400;
+}
+.img{
+    width: 45px;
+    height: 45px;
+    border-radius: 5px ;
+   
+    
+}
+
+.img>img{
+    display: block;
+    width: 100;
+    border-radius: 5px;
+}
+/*hover part of search div container*/
+.src-input:active{
+    transform: scaleX(1.5);
+}
+
+#check:checked+.src-div{
+    display: block;
+
+}
+.src-div:active ~ .src-div{
+    display: none;
+}
+
+/*right languages part*/
+.lang{
+    height: 20px;
+    
+}
+.lang>h5{
+    font-size: 0.8rem;
+    color: rgba(0, 0, 0, 0.721);
+}
+.h5-2{
+    display: none;
+}
+
+.lang-div{   /*>>>>>>>>>>>>>>>>language lang-div position.........*/
+    position: absolute;
+    top: 65px;
+    right: 6%;
+    border: 2px;
+    width: 20%;
+    height: 500px ;
+    display: grid;
+    place-items: center;
+    background-color: white;
+    border-radius: 5px;
+    color: rgba(0, 0, 0, 0.721);
+    box-shadow: 1px 1px 5px grey;
+}
+.lang-txt{
+    display: grid;
+    justify-items: center;
+}
+.lang-txt>p{
+    text-align: center;
+    font-style: italic;
+    font-size: 0.78rem;
+    margin-bottom:15px;
+   
+}
+@media screen and (max-width:1150px) {
+   
+    .lang-txt>p{
+        display: none;
+    }
+    
+}
+
+
+.lang-div>label{  /*>>>>>>>>>>>>>>>>label---------------*/
+        margin: 0px;
+        padding: 0px;
+        display: block;
+        width: 100%;
+        height: 25px;
+        line-height: normal;
+        border: none;
+        outline: none;
+        font-size: 1rem;
+        font-weight: 600;
+        text-align: center;
+        background-color: white;
+        color: rgba(0, 0, 0, 0.721);
+}
+
+#lang{
+    display: none;
+}
+#lng,#lng2,#lng3,#lng4,#lng5,#lng6,#lng7,#lng8{
+    display: none;
+}
+.tick{ /*>>>>>>>>>>>>>>>>>>>>>>------icon-------------*/
+    width: 20px;
+    height: 20px;
+    position: relative;
+    right: -70%;
+    top: -22px;
+    display: block;
+    background-color: var(--clr);
+    border-radius: 50%;
+    color: white;
+    display: none;
+    
+}
+/*>>>>>>>>>>>>>>>>>>>>>>>>>>>update_button_in__-*/
+
+.upd>h5{
+    width: 80%;
+    margin-left: 10%;
+    padding: 7px 30px;
+    font-size: 1rem;
+    text-align: center;
+    
+    border-radius: 14px;
+    background-color: var(--clr);
+    color: white;
+}
+#upd{
+    display: none;
+}
+/*>>>>>>>>>>>>>>---------language main div checked part */
+.lang-div{
+    display: none;
+}
+.lang-div+p{
+    font-size: 0.8em;
+}
+#lang:checked + .lang-div{
+    display: grid;
+}
+
+
+/*>>>>>>>>>>>>>>--------languages check box checked part */
+
+.lng1:checked + .t1{
+    display: block;
+    box-sizing: content-box;
+}
+.lng2:checked + .t2{
+    display: block;
+    box-sizing: content-box;
+}
+.lng3:checked + .t3{
+    display: block;
+    box-sizing: content-box;
+}
+.lng4:checked + .t4{
+    display: block;
+    box-sizing: content-box;
+}
+.lng5:checked + .t5{
+    display: block;
+    box-sizing: content-box;
+}
+.lng6:checked + .t6{
+    display: block;
+    box-sizing: content-box;
+}
+.lng7:checked + .t7{
+    display: block;
+    box-sizing: content-box;
+}
+.lng8:checked + .t8{
+    display: block;
+    box-sizing: content-box;
+}
+/*------------update-checked-----------------------*/
+#upd:checked ~ .lang-div{
+    display: none;
+}
+
+/*------------------------------------------------------*/
+/*header response*/
+@media screen and (max-width: 980px) {
+    .ah1,.ah2,.ah3{
+        display: none;
+    }
+    .last-img{
+        display: none;
+    }
+    .hh2 p{
+        display: none;
+    }
+    .lang>h5{
+       display: none;
+       
+    }
+    .i-hh2{
+        width: 50%;
+    }
+    .lang .h5-2{
+        display: block;
+        font-size: 0.9rem;
+        margin-top: 10px;
+    }
+    .src-label{
+        display: none;
+    }
+    .lang-div{   /*>>>>>>>>>>>>>>>>language lang-div position.........*/
+        position: absolute;
+        bottom: -10px;
+        right: 0px;
+       
+        border: 2px;
+        width: 100%;
+        height: 500% ;
+        display: grid;
+        place-items: center;
+        background-color: white;
+        /* border-radius: 5px;
+        color: rgba(0, 0, 0, 0.721);
+        box-shadow: 1px 1px 5px grey; */
+        
+    }
+    .lang-div{
+        display: none;
+    }
+
+
+}
+
+
+/*-----------------aside---------------------*/
+/*********************************************/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Lato,sans-serif;
+}
+
+aside{
+    position: fixed;
+    top: 70px;
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    height: 100vh;
+    padding-top: 79px;
+    padding-left: 44px;
+    margin-bottom: 80px;
+    z-index: 6;
+    gap: 30px;
+    overflow: auto;
+    transition: all 0.5s;
+}
+.aside1{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.aside1 h4{
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #828da8;
+    margin-bottom: 5px;
+}
+.aside1 a{
+    text-decoration: none;
+    font-size: 0.95rem;
+    color: black;
+    font-weight: 600;
+    padding: 5px 0;
+    color: rgba(0, 0, 0, 0.703);
+}
+.aside2{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.aside2 h4{
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #828da8;
+    margin-bottom: 5px;
+}
+.aside2 p{
+    text-decoration: none;
+    font-size: 0.95rem;
+    color: #3e3e3e;
+    padding: 5px 0;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.703);
+}
+.i{
+    font-size: 1rem;
+    font-weight: 600;
+
+}
+.aside3{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 100px;
+}
+.aside3 h4{
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #828da8;
+    margin-bottom: 5px;
+}
+.aside3 p{
+    display: block;
+    width: 70%;
+    padding-left: 5px;
+    text-decoration: none;
+    font-size: 0.95rem;
+    color: #3e3e3e;
+    padding: 5px 0;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.703);
+}
+/*hover part of aside*/
+.aside1 a:hover{
+    color: black;
+}
+.aside2 P:hover{
+    color: black;
+}
+.aside3 P:hover{
+    background-color: #3e3e3e;
+    color: white;
+    border-radius: 5px;
+}
+
+/* @media screen and (max-width: 1140px) {
+    aside{
+        transform: translatex(-100%);
+    }
+    
+} */
+/*******************************************************************/
+/*******************************************************************/
+main{
+    padding-left: 230px;
+    padding-right: 5%;
+    padding-top: 100px;
+    height: 100vh;
+    overflow-y: auto;
+}
+.container1{ 
+    margin-top: 10px;
+    width: 100%;
+    height: 35%;
+    border: 2px ;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+
+}
+.container1>h3{
+    padding-bottom: 2px;
+}
+.scrol1{
+   
+    display: grid;
+    grid-template-columns: repeat(11,1fr);
+    flex-wrap: nowrap;
+    gap: 10px;
+    
+    
+}
+.article{
+    width: 100%;
+    height: 150px;
+    
+}
+.article>img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    
+} 
+.playbtn{
+    position: relative;
+    font-size: 2rem;
+    color: black;
+    top: 50%;
+    left: 50%;
+    z-index: 18;
+
+}
+.container2{ 
+    margin-top: 15px;
+    width: 100%;
+    height: 70%;
+    border: 2px ;
+    overflow-x: auto;
+    overflow-y: hidden;
+
+
+}
+
+.scrol2{
+    display: grid;
+    grid-template-columns: repeat(11,1fr);
+    gap: 10px;
+}
+.container1>h3{
+    padding-bottom: 2px;
+}
+
+
+/*footer part*/
+.footer {
+    width: 100%;
+    background-color: #f8f8f8;
+    padding: 20px 0;
+    border-top: 1px solid #e7e7e7;
+}
+.footer .container {
+    width: 100%;
+    margin-left: 25px;
+    margin-top: 100px ;
+    display: flex;
+    justify-content: space-around ;
+    flex-wrap: wrap;
+    
+}
+.footer .column {
+    flex: 1;
+    min-width: 150px;
+    margin: 10px 0;
+}
+.footer .column h3 {
+    font-size: 12px;
+    margin-bottom: 10px;
+    color: #333;
+}
+.footer .column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.footer .column ul li {
+    margin-bottom: 8px;
+}
+.footer .column ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 13px;
+}
+.footer .bottom-links {
+    text-align: center;
+    margin-top: 20px;
+}
+.footer .bottom-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+.footer .copyright {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12px;
+    color: #999;
+}
+.footer .social-icons {
+    text-align: center;
+    margin-top: 20px;
+}
+.footer .social-icons a {
+    margin: 0 10px;
+    color: #333;
+    font-size: 20px;
+    text-decoration: none;
+}
+/********rsopnse of main div***/
+@media screen and (max-width: 1140px) {
+    aside{
+        transform: translatex(-100%);
+    }
+    main{
+        padding-left: 50px;
+        padding-right: 5%;
+        padding-top: 100px;
+        height: 100vh;
+        overflow-y: auto;
+    }
+    
+}
+@media screen and (max-width:400px) {
+    main{
+        padding-left: 20px;
+        padding-right: 5%;
+        padding-top: 100px;
+        height: 100vh;
+        overflow-y: auto;
+    }
+
+    .footer{
+        display: none;
+    }
+    .container1{ 
+        margin-top: 10px;
+        width: 100%;
+        height: 70%;
+        border: 2px ;
+        overflow-x: auto;
+        overflow-y: hidden;
+    
+    
+    }
+    .container1>h3{
+        padding-bottom: 2px;
+    }
+    .scrol1{
+       
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        flex-wrap: nowrap;
+        gap: 10px;
+        
+        
+    }
+    .article{
+        width: 100%;
+        height: 150px;
+        
+    }
+    .article>img{
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        
+    }
+    
+}
+
+
